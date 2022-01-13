@@ -14,7 +14,12 @@ public class Store {
     //advertise method
 
     public void advertise() {
-        
+
+    }
+
+    //main method
+    public static void main (String[] args) {
+
     }
 
 
