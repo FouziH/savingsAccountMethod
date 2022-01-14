@@ -36,9 +36,11 @@ public class Store {
 
         String drink = "Lemonade";
 
-        Store lemonadeStand = new Store(drink);
+        Store lemonadeStand = new Store(drink, 3.75);
         lemonadeStand.advertise();
         lemonadeStand.greetCustomer("Hamza");
+        lemonadeStand.increasePrice(1.5);
+        System.out.println(lemonadeStand.price);
 
 
     }
