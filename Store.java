@@ -2,12 +2,21 @@ public class Store {
 
     // Instance fields
     String productType;
+    double price;
 
     // Constructor method
 
-    public Store(String product) {
+    public Store(String product, double initialPrice) {
         productType = product;
+        price = initialPrice;
 
+    }
+
+    //increase price method
+
+    public void increasePrice(double priceToAdd) {
+        double newPrice = price + priceToAdd;
+        price = newPrice;
     }
 
     // advertise method
