@@ -12,7 +12,7 @@ public class Store {
 
     }
 
-    //increase price method
+    // increase price method
 
     public void increasePrice(double priceToAdd) {
         double newPrice = price + priceToAdd;
@@ -27,8 +27,16 @@ public class Store {
 
     }
 
-    public void greetCustomer (String customer) {
+    public void greetCustomer(String customer) {
         System.out.println("Welcome to the store, " + customer + "!");
+    }
+
+    // Get price with tax method
+
+    public double getPriceWithTax() {
+        double tax = 0.08;
+        double totalPrice = price + price * tax;
+        return totalPrice;
     }
 
     // main method
@@ -39,9 +47,11 @@ public class Store {
         Store lemonadeStand = new Store(drink, 3.75);
         lemonadeStand.advertise();
         lemonadeStand.greetCustomer("Hamza");
-        lemonadeStand.increasePrice(1.5);
+        // lemonadeStand.increasePrice(1.5);
         System.out.println(lemonadeStand.price);
 
+        double lemonadePrice = lemonadeStand.getPriceWithTax();
+        System.out.println(lemonadePrice);
 
     }
 
