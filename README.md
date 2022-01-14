@@ -31,6 +31,23 @@
         
         Adding Parameters
 
+
+        Returns
+
+
+        Remember, variables can only exist in the scope that they were declared in. We can use a value outside of the method it was created in if we return it from the method. 
+
+        We return a value by using the keyword return:
+
+        public int numberOfTire () {
+            int tires = 4;
+
+                return tires;
+        }
+
+
+        Void keywords mean completely empty and indicates that no value is returned after calling that method.
+
         
     
 
