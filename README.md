@@ -21,6 +21,14 @@
     
     Methods are repeatable, modular blocks of code used to accomplish specific tasks
 
+    Scope 
+        A method is task that an object of a class performs 
+        We mark of the domain of this task using a curly braces { , and }
+
+        Everything inside the {} <---- is part of the task. 
+            ** This domain inside teh {} is called scope 
+
+            
     
 
 
