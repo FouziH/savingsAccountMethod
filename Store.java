@@ -18,6 +18,10 @@ public class Store {
 
     }
 
+    public void greetCustomer (String customer) {
+        System.out.println("Welcome to the store, " + customer + "!");
+    }
+
     // main method
     public static void main(String[] args) {
 
@@ -25,8 +29,8 @@ public class Store {
 
         Store lemonadeStand = new Store(drink);
         lemonadeStand.advertise();
-        lemonadeStand.advertise();
-        lemonadeStand.advertise();
+        lemonadeStand.greetCustomer("Hamza");
+
 
     }
 
